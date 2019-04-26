@@ -318,8 +318,8 @@ class ZUGFeRDTransactionModelConverter {
         currencyCode.setValue(currency);
         tradeSettlement.setInvoiceCurrencyCode(currencyCode);
 
-        tradeSettlement.getSpecifiedTradeSettlementPaymentMeans().add(
-            this.getPaymentData());
+        /*tradeSettlement.getSpecifiedTradeSettlementPaymentMeans().add(
+            this.getPaymentData());*/
         tradeSettlement.getApplicableTradeTax().addAll(this.getTradeTax());
         tradeSettlement.getSpecifiedTradePaymentTerms().addAll(
             this.getPaymentTerms());

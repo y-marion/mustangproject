@@ -3,16 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.mustangproject.ZUGFeRD</groupId>
     <artifactId>mustang</artifactId>
-    <version>1.5.6-SNAPSHOT</version>
+    <version>1.5.6</version>
     <packaging>jar</packaging>
     <name>Mustang</name>
     <description>The Mustang project is a java library to read and write ZUGFeRD meta data inside your invoice PDFs</description>
     <url>http://www.mustangproject.org/</url>
     <scm>
-        <connection>scm:git:https://github.com/ZUGFeRD/mustangproject.git</connection>
-        <developerConnection>scm:git:https://github.com/ZUGFeRD/mustangproject.git</developerConnection>
-        <url>https://github.com/ZUGFeRD/mustangproject</url>
-        <tag>mustang-1.5.2</tag>
+        <connection>scm:git:https://github.com/y-marion/mustangproject.git</connection>
+        <developerConnection>scm:git:https://github.com/y-marion/mustangproject.git</developerConnection>
+        <url>https://github.com/y-marion/mustangproject</url>
+        <tag>mustang-1.5.6</tag>
     </scm>
     <repositories>
         <repository><!-- for jargs -->
@@ -151,6 +151,16 @@
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+            <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.12</version>
@@ -169,7 +179,7 @@
                     <merge>true</merge>
                     <repositoryName>mustangproject</repositoryName>
                     <!-- github repo name -->
-                    <repositoryOwner>ZUGFeRD</repositoryOwner>
+                    <repositoryOwner>y-marion</repositoryOwner>
                     <!-- github username -->
                 </configuration>
                 <executions>
